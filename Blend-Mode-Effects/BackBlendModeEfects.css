@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+  --text-color: rgb(6, 6, 129);
+  --Stext-color: rgb(31, 31, 247);
+  --Ttext-color:  rgb(10, 106, 249);
+  --Ftext-color:white;
+}
+.maindiv{
+    background-image: url(Images/bearded-man-using-mobile-phone-seen-through-transparent-glass-caf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-color: rgba(177, 247, 233, 0.473);
+    background-blend-mode: hard-light;
+}
+h2{
+    color: var(--text-color);
+}
+h4{
+    color: var(--Stext-color);
+}
+h1{
+    color: var(--text-color);
+    font-size: 50px;
+}
+span{
+    color: var(--Stext-color);
+}
+p{
+    color: var(--Ttext-color);
+}
+input{
+   background-color: var(--Stext-color);
+   color: var(--Ftext-color);
+   padding: 10px;
+   border: 0px solid;
+   border-radius: 5px;
+}
+.secmaindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    line-height: 35px;
+}
+hr{
+    border-bottom: 2px solid black;
+    width: 30%;
+    margin-left: 35%;
+}
