@@ -1,0 +1,39 @@
+#class{
+    width: 100%;
+    height: 600px;
+}
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0px;
+}
+.rock{
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.5); 
+    color: white;
+    border: 0px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+}
+.heading{
+    text-align: center;
+}
+.Contents{
+    display: flex;
+    justify-content: space-around;
+}
+.rock1{
+    margin-top: 5px;
+}
+.rock4{
+   background-color: aliceblue;
+   width: 90%;
+   height: 15px;
+   border: 0px solid;
+   border-radius: 5px;
+}
