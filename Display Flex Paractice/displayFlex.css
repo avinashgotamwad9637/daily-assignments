@@ -1,0 +1,39 @@
+.containerforfirst{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .boxfirst{
+    height: 265px;
+    width: 220px;
+    border: 0px solid black;
+    border-radius: 5px;
+    /* box-shadow:2px 2px 5px 5px gainsboro; */
+    text-align: center;
+    line-height: 0px;
+  }
+  img{
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
+    position: relative;
+    top: 2px;
+  }
+  img:hover{
+    filter: opacity(0.6);
+  }
+  input{
+    height: 20px;
+    width: 100px;
+    border: 0px solid green;
+    border-radius: 5px;
+    font-weight: bold;
+    background-image: linear-gradient(to left, rgba(201, 245, 129, 0.991),rgba(173, 245, 29, 0.991));
+  }
+  input:hover{
+    background-image: linear-gradient(to left, rgba(129, 191, 235, 0.991),rgba(120, 219, 237, 0.991));
+    color: white;
+}
+  h5{
+    color: rgb(99, 98, 98);
+  }
