@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle and Form UI</title>
+    <style>
+        .maincontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            height: 100vh;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+
+        .innerdivfortraingelandform {
+            width: 400px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .trainglediv {
+            width: 0;
+            height: 0;
+            border-left: 400px solid #7f7de1;
+            border-top: 270px solid transparent;
+            border-bottom: 270px solid transparent;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .headingofthetaingle {
+            position: absolute;
+            top: 50%;
+            left: -350px; 
+            transform: translateY(-50%);
+            z-index: 1; 
+            text-align: left;
+            color: black;
+            width: 300px; 
+            font-weight: bold;
+        }
+
+
+
+
+        .formdiv {
+            width: 400px;
+            height: 550px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            background-color: white;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            height: 30px;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .btn {
+            width: 40%;
+            height: 35px;
+            border-radius: 5px;
+            font-size: larger;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        #btns {
+            background-image: linear-gradient(to right, #807ef0, #589cea); /* Blue gradient similar to the triangle */
+            color: white;
+        }
+
+        #btns11 {
+            background-image: linear-gradient(to right, #8a7de9, #1e73d5); /* Lighter blue gradient for Cancel */
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="innerdivfortraingelandform">
+            <div class="trainglediv">
+                <div class="headingofthetaingle">
+                    <h1>Welcome To</h1>
+                    <h2>M.V. HOSPITAL FOR DIABETES</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="innerdivfortraingelandform">
+            <div class="formdiv">
+                <form action="">
+                    <h2>Login</h2>
+                    <label for="username">User Name</label>
+                    <input type="text" id="username">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option value="">Select Location</option>
+                    </select>
+
+                    <label for="department">Department</label>
+                    <select id="department">
+                        <option value="">Select Department</option>
+                    </select>
+
+                    <label for="sub-department">Sub-Department</label>
+                    <select id="sub-department">
+                        <option value="">Select Sub-Department</option>
+                    </select>
+
+                    <label for="shift">Shift</label>
+                    <select id="shift">
+                        <option value="">Select Shift</option>
+                    </select>
+
+                    <div class="btn-container">
+                        <input type="submit" value="Log In" id="btns" class="btn">
+                        <input type="button" value="Cancel" id="btns11" class="btn">
+                    </div>
+                    
+                    <p style="text-align: center; margin-top: 10px;">
+                        <a href="#">Forgot Password? Need Help?</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
