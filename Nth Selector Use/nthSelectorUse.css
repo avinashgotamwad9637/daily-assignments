@@ -1,0 +1,96 @@
+.tbl{
+    border-color: red;
+    /* background-color: rgb(182, 206, 206); */
+    /* width: 50%; */
+    
+ }
+  .tbl  tr:nth-child(1) td:nth-child(1){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(1) td:nth-child(3){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(1) td:nth-child(5){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(1) td:nth-child(7){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(1) td:nth-child(9){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(2) td:nth-child(2){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(2) td:nth-child(4){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(2) td:nth-child(6){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(2) td:nth-child(8){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(2) td:nth-child(10){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(3) td:nth-child(1){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(3) td:nth-child(3){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(3) td:nth-child(5){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(3) td:nth-child(7){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(3) td:nth-child(9){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(4) td:nth-child(2){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(4) td:nth-child(4){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(4) td:nth-child(6){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(4) td:nth-child(8){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(4) td:nth-child(10){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(5) td:nth-child(1){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(5) td:nth-child(3){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(5) td:nth-child(5){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(5) td:nth-child(7){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(5) td:nth-child(9){
+        background-color: aqua;
+  }
+  .tbl  tr:nth-child(6) td:nth-child(2){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(6) td:nth-child(4){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(6) td:nth-child(6){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(6) td:nth-child(8){
+        background-color: rgb(240, 182, 57);
+  }
+  .tbl  tr:nth-child(6) td:nth-child(10){
+        background-color: rgb(240, 182, 57);
+  }
