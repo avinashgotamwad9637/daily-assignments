@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgreen;
+    padding: 0px 20px;
+}
+
+/* Company Name */
+.nav_brand {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* Box Container (Aligned Right) */
+.box-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Colored Boxes */
+.box {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue { background-color: blue; }
+.yellow { background-color: yellow; }
+.red { background-color: red; }
+
+/* Small Border Box Inside Each Box */
+.border-box {
+    width: 6px;
+    height: 6px;
+    border: 1px solid black;
+}
+
+.main_div_sidebar_dashboard{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #d3dcd6;
+    padding: 10px;
+    height: 100vh;
+}
+
+/* Profile Section */
+.profile {
+    background-color: #6a5acd;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+}
+
+.profile h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.profile p {
+    font-size: 12px;
+}
+
+/* Sidebar Menu */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.menu li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.menu li:hover {
+    background: #333;
+    cursor: pointer;
+}
+
+.menu li.dashboard {
+    background: lightgreen;
+    font-weight: bold;
+}
+
+/* Dashboard Section */
+.dashboard {
+    flex: 1;
+    padding: 20px;
+}
+
+.dashboard h1 {
+    font-size: 24px;
+}
+
+.dashboard p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Dashboard Cards */
+.cards {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.pending { background: #e58e6d; }
+.tasks { background: #f4d35e; }
+.issues { background: #e066cf; }
+
+/* Chat & Info Section */
+.chat-section {
+    display: flex;
+    gap: 15px;
+}
+
+.chat-box {
+    background: #74d2e7;
+    padding: 20px;
+    flex: 2;
+    border-radius: 10px;
+}
+
+.recent-chat {
+    flex: 1;
+    background: #ede4d1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chat-message {
+    background: #6dd47e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.profile-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
