@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+label,input,textarea,select{
+    margin-top: 10px;
+}
+input,select,textarea{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.containerforform{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(235, 227, 155);
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    /* font-size: small; */
+    /* font-weight: bold; */
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+}

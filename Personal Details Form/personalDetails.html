@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+     <!-- css file external -->
+      <link rel="stylesheet" href="personalDetails.css">
+      <!-- another css files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+BE+WAL:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+<body>
+    <!-- starting main container for form -->
+    <div class="containerforform">
+    <form action="">
+        <h3>Personal Details</h3>
+        <label for="nmae">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Name Here"><br>
+        <label for="pass">Password</label>
+        <input type="password" name="password" id="pass" placeholder="Enter Password"><br>
+        <label for="mail">Email ID</label>
+        <input type="email" name="email" id="mail" placeholder="Enter Your Email"><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender">
+        <input type="radio" name="gender" id="gender"><br>
+        <label for="contact">Contact#</label>
+        <input type="contact" minlength="3" maxlength="10" id="contact" placeholder="Enter Your Number">
+
+        <h3>Educational Qualification</h3>
+
+        <label for="degree">Degree</label>
+            <select name="degree" id="degree">
+                
+                <option value="">Select Course</option>
+                <option value="">BCA</option>
+                <option value="">BCS</option>
+                <option value="">BSC</option>
+                <option value="">BBA</option>
+                
+            </select><br>
+        <label for="engeneer">Engineering</label>
+            <select name="engineer" id="engineer">
+
+                <option value="">Select Faculty</option>
+                <option value="">Mechanical</option>
+                <option value="">Civil</option>
+                <option value="">Electrical</option>
+                
+            </select><br>
+        <label for="hobby">Hobbies</label>
+        <input type="checkbox">Cricket
+        <input type="checkbox">Reading Books
+        <input type="checkbox">Gaming <br>
+        <label for="address">Address</label><br>
+        <textarea name="address" id="address" cols="30" rows="3">Enter Here Your Address</textarea><br>
+        <label for="resue">Attach Resume</label>
+        <button>Choose File</button>No file choosen <br>
+        <input type="submit" value="Submit From">
+    </form>
+    </div>
+    <!-- closing main container for form -->
+</body>
+</html>
