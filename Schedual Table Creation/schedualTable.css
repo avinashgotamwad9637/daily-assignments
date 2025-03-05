@@ -1,0 +1,76 @@
+.Heading{
+    color: rgba(7, 204, 83, 0.53);
+    text-align: center;
+    text-decoration: underline double;
+}
+.tbl{
+    text-align: center;
+}
+.tbl tr:nth-child(1){
+    background-color: rgba(137, 43, 226, 0.422);
+    border-bottom: 5px solid black;
+}
+.tbl tr:nth-child(1){
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.tbl tr:nth-child(2) td:nth-child(1){
+    background-color: rgba(0, 255, 85, 0.368);
+}
+.tbl tr:nth-child(2) td:nth-child(2){
+    background-color: rgba(183, 255, 0, 0.368);
+}
+.tbl tr:nth-child(2) td:nth-child(3){
+    background-color: rgba(0, 255, 255, 0.368);
+}
+.tbl tr:nth-child(2) td:nth-child(4){
+    background-color: rgba(0, 255, 85, 0.368);
+}
+.tbl tr:nth-child(2) td:nth-child(5){
+    background-color: rgba(183, 255, 0, 0.368);
+}
+.tbl tr:nth-child(2) td:nth-child(6){
+    background-color: rgba(0, 255, 255, 0.368);
+}
+.tbl tr:nth-child(3) td:nth-child(1){
+    background-color: rgba(13, 109, 164, 0.368);
+}
+.tbl tr:nth-child(3) td:nth-child(2){
+    background-color: rgba(132, 7, 105, 0.368);
+}
+.tbl tr:nth-child(3) td:nth-child(3){
+    background-color: rgba(152, 18, 18, 0.368);
+}
+.tbl tr:nth-child(3) td:nth-child(4){
+    background-color: rgba(13, 109, 164, 0.368);
+}
+.tbl tr:nth-child(3) td:nth-child(5){
+    background-color: rgba(132, 7, 105, 0.368);
+}
+.tbl tr:nth-child(3) td:nth-child(6){
+    background-color: rgba(152, 18, 18, 0.368);
+}
+.tbl tr:nth-child(4) td:nth-child(1){
+    background-color: rgba(0, 255, 85, 0.368);
+}
+.tbl tr:nth-child(4) td:nth-child(2){
+    background-color: rgba(183, 255, 0, 0.368);
+}
+.tbl tr:nth-child(4) td:nth-child(3){
+    background-color: rgba(0, 255, 255, 0.368);
+}
+.tbl tr:nth-child(4) td:nth-child(4){
+    background-color: rgba(0, 255, 85, 0.368);
+}
+.tbl tr:nth-child(4) td:nth-child(5){
+    background-color: rgba(183, 255, 0, 0.368);
+}
+.tbl tr:nth-child(4) td:nth-child(6){
+    background-color: rgba(0, 255, 255, 0.368);
+}
+.tbl tr td{
+    border: 0px;
+    border-bottom: 4px solid white;
+    font-size: small;
+    /* border-radius: 5px; */
+}

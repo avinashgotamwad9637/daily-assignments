@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Writting Mode</title>
+    <style>
+        .text{
+            transform-origin: center center;
+            writing-mode: vertical-rl;
+            transform: rotate(-180deg); 
+            
+        }
+    </style>
+</head>
+<body>
+    <table border="1px solid black" cellspacing="0" cellpadding="5" width="20%" align="center">
+       <h2 align="center">Writting Mode Table Creation</h2>
+        <tr>
+            <td colspan="2">header</td>
+            <td>header</td>
+        </tr>
+        <tr>
+            <td rowspan="5" class="text" align="center">optimize</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="text" >text1</td>
+            
+            <td >text</td>
+        </tr>
+        <tr>
+            <td >text</td>
+                
+        </tr>
+        <tr>
+            <td rowspan="2" class="text">text2</td> 
+            
+            <td >text</td> 
+        </tr>
+        <tr>
+            <td>text</td>
+        </tr>
+      
+        
+    </table>
+    
+</body>
+</html>
