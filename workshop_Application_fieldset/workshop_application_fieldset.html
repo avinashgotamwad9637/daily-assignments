@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop/Application/Feildset Forms</title>
+   
+    <!-- css file -->
+     <link rel="stylesheet" href="workshop_application_fieldset.css">
+</head>
+<body>
+    <form action="#" method="post">
+    <h2 style="color: rgb(105, 104, 104);">1)Workshop Registration Form:</h2>
+    <br>
+   
+        <table border="0" cellspacing="0" cellpadding="5" style="border:1px solid; width: 100%; font-size: large;">
+            <tr style="background-color: aquamarine; height: 30px;">
+                <td colspan="2"><u><i><b>Workshop Registration</b></i></u></td>
+                <td colspan="3">
+                    <select>
+                        <optgroup>
+                            <option>More Actions</option>
+                            <option>About</option>
+                            <option>Home</option>
+                            <option>Front Caption</option>
+                        </optgroup>
+                    </select>
+            
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><u>Register now while seats are available</u></td>
+            </tr>
+            <tr>
+                <td><label for="first">First Name</label></td>
+                <td><input type="text" id="first"></td>
+                <td colspan="2"><label>Lunch</label></td>
+            </tr>
+            <tr>
+                <td><Label for="last">Last Name</Label></td>
+                <td><input type="text" id="last"></td>
+                <td><label for="meal">Meal preference</label></td>
+                <td>
+                    <select id="meal">
+                        <optgroup>
+                            <option>vegetarian</option>
+                            <option>non-vegetarian</option>
+                            
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="compa">Company/Institution</label></td>
+                <td><input type="text" id="compa"></td>
+                <td colspan="2"><label>Payment Details</label></td>
+            </tr>
+            <tr>
+                <td> <label for="mes">message</label></td>
+                <td><textarea rows="6" cols="20" id="mes"></textarea></td>
+                <td>    </td>
+                <td><input type="checkbox" id="cash">  
+                    <label for="cash">Cash</label><br><br>
+                    <input type="checkbox" id="cheque">
+                    <label for="cheque">Cheque</label><br><br>
+                    <input type="checkbox" id="demand">
+                    <label for="demand">Demand Draft</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cit">City</label></td>
+                <td><input type="text" id="cit"></td>
+                <td><label for="ddno">DD/Cheque No.</label></td>
+                <td><input type="text" id="ddno"></td>
+            </tr>
+            <td><label for="state">State/Provider/Region</label></td>
+            <td>
+            <select id="state">    
+            <optgroup>
+                <option>Maharashtra</option>
+                <option>Goa</option>
+                <option>Banglor</option>
+                <option>Chhatisgarh</option>
+            </optgroup>
+            </select>
+            </td>
+            <td><label for="draw">Draw On (Bank Name)</label></td>
+            <td><input type="text" id="draw"></td>
+            <tr>
+                <td><label for="count">Country</label></td>
+                <td>
+                    <select id="count">    
+                    <optgroup>
+                        <option>India</option>
+                        <option>Americ</option>
+                        <option>Japan</option>
+                        <option>Chaina</option>
+                    </optgroup>
+                    </select>
+                    </td>
+                    <td><label for="pay">Paybal at</label></td>
+                    <td><input type="text" id="pay"></td>
+                </tr>
+                    <tr>
+                        <td><label for="emai">Email</label></td>
+                        <td><input type="text" id="emai"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phon">Phone Number</label></td>
+                        <td><input type="text" id="phon"></td>
+                    </tr>
+                <tr style="background-color: rgb(228, 228, 224);">
+                    <td></td>
+                    <td></td>
+                    <td><input type="button" value="Submit" style="background-color: aquamarine; border: 0px solid; padding: 5px; padding-left: 17%; padding-right: 17%; margin-left: -65%; font-size: large; color: white; border-radius: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></td>
+                    <td><input type="button" value="Reset" style="background-color: aquamarine; border: 0px solid; padding: 5px; padding-left: 17%; padding-right: 17%; margin-left: -95%; font-size: large; color: white; border-radius: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></td>
+
+                </tr>
+            
+
+        </table>
+    <h2 style="color: rgb(105, 104, 104);">2) Application Form:</h2>
+    <br>
+    <table border="0px solid" cellspacing="0" cellpadding="10" id="table">
+        <th  id="head" colspan="5">Application Form</th>
+        <tr>
+            <td><label for="fn">First Name</label></td>
+            <td><input type="text" id="fn"></td>
+            <td><label for="ls">Last Name</label></td>
+            <td><input type="text" id="ls"></td>
+        </tr>
+        <tr>
+            <td><label for="birth">Date Of Birth</label></td>
+            <td><input type="Date" id="birth"></td>
+            <td><label for="age">Age</label></td>
+            <td><input type="text" id="age"></td>
+        </tr>
+        <tr>
+            <td><label for="gen">Gender</label></td>
+            <td>
+                <select id="gen">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </td>
+            <td><label for="mail">Email</label></td>
+            <td><input type="Email" placeholder="Enter your email" id="mail"></td>
+        </tr>
+        <tr>
+            <td>Position Available: </td>
+            <td><input type="radio" id="juniordeveloper" value="Junior Developer" name="position"><label for="juniordeveloper">Junior Developer</label></td>
+            <td><input type="radio" id="mid-level developer" value="mid-level developer" name="position"><label for="mid-level developer">Mid-Level Developer</label></td>
+            <td><input type="radio" id="senior developer" value="senior developer" name="position"><label for="senior developer">Senior Developer</label></td>
+        </tr>
+        <tr>
+            <td>Programming Languages</td>
+            <td><input type="checkbox" id="java" value="java" name="language"><label for="java">Java</label></td>
+            <td><input type="checkbox" id="js" value="js" name="language"><label for="js">JavaScript</label></td>
+            <td><input type="checkbox" id="paython" value="paython" name="language"><label for="paython">Paython</label></td>
+        </tr>
+        <tr>
+            <td><label for="pass">Password</label></td>
+            <td class="same"><input type="password" id="pass" value="password"></td>
+            <td class="same1"><label for="con">Confirm Password</label></td>
+            <td><input type="password" id="con" value="password"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Submit" id="sub"></td>
+            <td><input type="button" value="Reset" id="res"></td>
+        </tr>
+    </table>
+    <br>
+    <h2 style="color: rgb(105, 104, 104);">3) Fieldset Form:</h2>
+
+    <fieldset width="200px">
+        <table cellpadding="6"> 
+         
+              
+            <legend> Your address</legend>
+              <tr>  
+                <td> <label for="fname"> First Name </label></td>
+                <td> <input type="text" id="fname"></td>
+             </tr>
+             <tr>  
+                <td> <label for="lname"> Last Name </label></td>
+                <td> <input type="text" id="lname"></td>
+             </tr>
+             <tr>  
+                <td> <label for="street"> Street </label></td>
+                <td> <input type="text" id="street"></td>
+             </tr>
+             <tr>  
+                <td> <label for="city"> City </label></td>
+                <td> <input type="text" id="city"></td>
+             </tr>
+         
+            </table> 
+    </fieldset>
+     
+            <br> 
+    <fieldset>
+      <table cellpadding="6">
+       <tr>
+         <legend> Additional detail </legend> </tr>
+             <td>  <label for="bio"> Biography </label></td>
+             <td> <textarea id="bio"></textarea></td> 
+       </tr>
+        <tr>
+             <td> <label for="im"> Image </label></td>
+             <td><input type="file" id="im"></td>
+        </tr>
+        <tr> 
+            <td> <label for="gro"> Age Group </label></td>
+            <td><select id="gro"> 
+                     <option> 0-9 Years</option>
+                     <option> 10-20 Years</option>
+                     <option> 20-30 Years</option>
+                 </select></td>
+        </tr>
+      </table>
+        </fieldset> <br> 
+    <fieldset>
+        <legend> Interest</legend>
+        <table cellpadding="6"> 
+            <tr>
+                <td><label for="hob">Hobbies</label></td>
+                <td>
+                    <select multiple id="hob">
+                        <option value="Playing">playing</option>
+                        <option value="Dancing">Dancing</option>
+                        <option value="Gadering">Gadering</option>
+                        <option value="Reading">Reading</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <Td><label for="fav">Favourite Car?</label></Td>
+                <td>
+                    <select id="fav">
+                        <option>volvo</option>
+                        <option>SUV</option>
+                        <option>Safari</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="publ">Favourite Public trasport?</label></td>
+                <td> <select multiple id="publ"> 
+                    <option> Ground</option>
+                    <option> Train</option>
+                    <option> Bus </option>
+                    <option>  water</option>
+                </select></td>
+            </tr>
+        </table>
+
+    </fieldset>
+</form>
+</body>
+</html>
