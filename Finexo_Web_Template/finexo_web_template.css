@@ -1,0 +1,824 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* First Page Wrapper */
+.firstpage {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.brandname {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menubtns {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menubtns:hover {
+    color: #ffcc00;
+}
+
+.fa-magnifying-glass {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Container for Text and Image */
+.containerfortextandimage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 10%;
+}
+
+/* Left Side Text */
+.divfortext {
+    flex: 1;
+}
+
+.textoffirstdiv {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.paraoffirstdiv {
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.btnoffirstdiv {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btnoffirstdiv:hover {
+    background: #e6b800;
+}
+
+/* Right Side Image */
+.divforimage {
+    flex: 1;
+    text-align: center;
+}
+
+.imageforfirstdiv1 {
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .containerfortextandimage {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .divforimage {
+        margin-top: 20px;
+    }
+
+    .textoffirstdiv {
+        font-size: 40px;
+    }
+}
+
+/* Second Page Styling */
+.secondpagediv {
+    width: 100%;
+    background: white;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+/* Heading Section */
+.secondpageheadingdiv {
+    margin-bottom: 40px;
+}
+
+.Headingsecondpage {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #141e30;
+}
+
+.headingservice {
+    color: #ffcc00;
+}
+
+.secondpageheadingdiv p {
+    font-size: 16px;
+    color: gray;
+}
+
+/* Container for Service Divs */
+.secondpagecontainerfordiv {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Service Boxes */
+.secondpagedivs {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.secondpagedivs:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.imagesofsecondpage {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.seconddivheadingsofimages {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.paraofseconddiv {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btnofseconddiv {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btnofseconddiv:hover {
+    background: #e6b800;
+}
+
+/* View All Button */
+.btnofsecondpageveiw {
+    margin-top: 40px;
+}
+
+.btnofsecondpageveiwAll {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    background: #141e30;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btnofsecondpageveiwAll:hover {
+    background: #243b55;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .secondpagecontainerfordiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondpagedivs {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Third Page Styling */
+.maincontainerforthirdpage {
+    width: 100%;
+    background: white;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+/* Heading Section */
+.secondpageheadingdiv {
+    margin-bottom: 40px;
+}
+
+.Headingsecondpage {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #141e30;
+}
+
+.headingservice {
+    color: #ffcc00;
+}
+
+.secondpageheadingdiv p {
+    font-size: 16px;
+    color: gray;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container for About Section */
+.containerforthirdidvimgandtext {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Image and Text Container */
+.samedivforimageandtextthirdpage {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Image Styling */
+.imageofthirddiv {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+/* About Us Text Section */
+.samedivforimageandtextthirdpage h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #141e30;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.samedivforimageandtextthirdpage p {
+    font-size: 16px;
+    color: gray;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Read More Button */
+.btnofsecondpageveiwAll {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    background: #141e30;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btnofsecondpageveiwAll:hover {
+    background: #243b55;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .containerforthirdidvimgandtext {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .samedivforimageandtextthirdpage p {
+        text-align: center;
+    }
+
+    .samedivforimageandtextthirdpage h2 {
+        text-align: center;
+    }
+}
+/* Fourth Page Styling */
+.maincontainerforforthpage {
+    width: 100%;
+    background: white;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+/* Heading */
+.Headingsecondpage {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #141e30;
+    margin-bottom: 30px;
+}
+
+.headingservice {
+    color: #ffcc00;
+}
+
+/* Image Styling */
+.forthpageimage {
+    width: 100%;
+    max-width: 250px;
+    margin: 20px 0;
+}
+
+/* Subheadings */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #141e30;
+    margin-top: 10px;
+}
+
+/* Paragraph Styling */
+.paraofseconddiv {
+    font-size: 16px;
+    color: gray;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Read More Button */
+.btnofsecondpageveiwAll {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    background: #141e30;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btnofsecondpageveiwAll:hover {
+    background: #243b55;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .forthpageimage {
+        max-width: 200px;
+    }
+
+    .Headingsecondpage {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .paraofseconddiv {
+        font-size: 14px;
+    }
+}
+
+/* Fifth Page Styling */
+.maincontainerforfifthpage {
+    width: 100%;
+    padding: 60px 10%;
+    background-color: white;
+    text-align: center;
+}
+
+/* Heading */
+.divforheadingoffifthpage {
+    margin-bottom: 50px;
+}
+
+.Headingsecondpage {
+    font-size: 36px;
+    font-weight: bold;
+    color: #141e30;
+    text-transform: uppercase;
+}
+
+.headingservice {
+    color: #ffcc00;
+}
+
+/* Team Section - Flexbox Layout */
+.fithpageourteamcontainer {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    gap: 30px;
+}
+
+/* Team Member Box */
+.ourteamboxfifthpage {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 220px; /* Set fixed width */
+    text-align: center;
+}
+
+.ourteamboxfifthpage:hover {
+    transform: translateY(-10px);
+}
+
+/* Team Member Image */
+.imageofteamfifthpage {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Name and Role */
+.ourteamboxfifthpage h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #141e30;
+    margin-bottom: 10px;
+}
+
+.ourteamboxfifthpage h5 {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.socialiconsforfifthpageteam {
+    font-size: 20px;
+    color: #141e30;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.socialiconsforfifthpageteam:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Headingsecondpage {
+        font-size: 28px;
+    }
+
+    .imageofteamfifthpage {
+        max-width: 150px;
+    }
+
+    .fithpageourteamcontainer {
+        flex-direction: column; /* Stack team boxes vertically on small screens */
+        align-items: center;
+    }
+
+    .ourteamboxfifthpage {
+        width: 90%; /* Make the profile boxes take up most of the width */
+        margin-bottom: 20px;
+    }
+}
+
+/* Sixth Page Styling */
+.maincontainerofsixthpage {
+    width: 100%;
+    padding: 60px 10%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divforheadingoffifthpage {
+    margin-bottom: 50px;
+}
+
+.Headingsecondpage {
+    font-size: 36px;
+    font-weight: bold;
+    color: #141e30;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.headingservice {
+    color: #ffcc00;
+}
+
+/* Carousel Container (Display 2 items side by side) */
+.carousel-container {
+    display: flex;              /* Align items in a row */
+    overflow: hidden;           /* Hide the overflowing items */
+    width: 100%;
+    justify-content: flex-start; /* Align carousel items to the left */
+    flex-wrap: nowrap; /* Ensure carousel items don't wrap around */
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;     /* Center content horizontally */
+    align-items: center;         /* Align items vertically */
+    flex-shrink: 0;              /* Prevent items from shrinking */
+    width: 50%;                  /* Each carousel item takes 50% of the container width */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for sliding */
+}
+
+.carousel-item .conainerforsixthpagecustomers {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.imagesofsixthpagecustomers {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#iconssixthpage1 {
+    font-size: 30px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #141e30;
+    margin-bottom: 10px;
+}
+
+.paraofseconddiv {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Carousel Navigation Buttons */
+.btnofsisthdiv1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btnofsisthpage {
+    background-color: #141e30;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+}
+
+.btnofsisthpage:hover {
+    background-color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Headingsecondpage {
+        font-size: 32px;
+    }
+
+    .carousel-item .conainerforsixthpagecustomers {
+        width: 48%; /* Adjust carousel item width for tablets */
+    }
+
+    .btnofsisthdiv1 {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btnofsisthpage {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Headingsecondpage {
+        font-size: 28px;
+    }
+
+    .carousel-container {
+        flex-direction: column; /* Stack carousel items vertically on small screens */
+        align-items: center;
+    }
+
+    .carousel-item .conainerforsixthpagecustomers {
+        width: 90%; /* Adjust to 90% on smaller screens */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+
+    .btnofsisthdiv1 {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .btnofsisthpage {
+        margin: 10px 0;
+        font-size: 16px; /* Adjust button size for smaller screens */
+        padding: 8px 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .Headingsecondpage {
+        font-size: 24px;
+    }
+
+    .carousel-item .conainerforsixthpagecustomers {
+        width: 95%; /* Adjust to 95% on very small screens */
+    }
+
+    .carousel-item .conainerforsixthpagecustomers img {
+        width: 120px; /* Make images smaller on mobile */
+        height: 120px;
+    }
+
+    .btnofsisthpage {
+        font-size: 14px; /* Further reduce button size */
+        padding: 6px 12px; /* Adjust padding */
+    }
+}
+
+
+/* General Footer Container */
+.maincontainerforfooterdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #2c3e50;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.containeroffooter {
+    width: 22%;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.Address, .Links, .info {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.Address i, .social-icons i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #ecf0f1;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #f39c12;
+}
+
+.LinksList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Links {
+    font-size: 14px;
+    margin: 5px 0;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.Links:hover {
+    color: #f39c12;
+}
+
+.Subscribe {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #34495e;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.btnoffootersubscribe {
+    padding: 8px 16px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnoffootersubscribe:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .maincontainerforfooterdiv {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .containeroffooter {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
