@@ -1,0 +1,17 @@
+body {
+    height: 1000px; 
+    margin: 0;
+}
+#color-Button {
+    height: 200px;
+    width: 400px;
+    background-color: rgba(3, 219, 3, 0.47);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    position: fixed; 
+    top: 50px;
+    left: 50px;
+}
