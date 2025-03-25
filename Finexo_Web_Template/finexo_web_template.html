@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+BE+WAL:wght@100..400&family=Sevillana&display=swap" rel="stylesheet">
     <!-- external css file -->
     <link rel="stylesheet" href="finexo_web_template.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
    </head>
 
 <body>
@@ -218,25 +220,24 @@
                     </div>
                 </div>
             </div>
-         <!-- Starting fifth page here for our team -->  
+         <!-- wnding fifth page here for our team -->  
 
         <!-- starting of sixth page here -->
-        <div>
-            <div class="divforheadingoffifthpage">
-                <h2 class="Headingsecondpage">What says our <span class="headingservice">Customers</span></h2>
-            </div>
-        
-            <div class="maincontainerofsixthpage">
-                <div class="carousel-container">
-                    <!-- Carousel Item 1 -->
-                    <div class="carousel-item active">
+        <div class="divforheadingoffifthpage">
+            <h2 class="Headingsecondpage">What says our <span class="headingservice">Customers</span></h2>
+        </div>
+    
+        <div class="maincontainerofsixthpage">
+            <div class="carousel-container" style="overflow: hidden; white-space: nowrap;">
+                <div class="carousel-wrapper" id="carousel" style="display: flex; transition: transform 0.5s ease-in-out;">
+                    <div class="carousel-item" style="display: inline-block; width: 100%; text-align: center;">
                         <div class="conainerforsixthpagecustomers">
                             <img src="Images/lusden.jpg" alt="" class="imagesofsixthpagecustomers">
-                            <i class="fa-sharp fa-solid fa-quote-left" id="iconssixthpage1"></i>
+                            <i class="fa-sharp fa-solid fa-quote-left"></i>
                             <h5>LusDen</h5>
                             <label class="paraofseconddiv">Magna Ulqua. Ut</label>
                             <p class="paraofseconddiv">
-                                Lorem ipsum dolor sit amet consectetur, <br>
+                                Lorem ipsum dolor sit amet consectetur,<br>
                                 adipisicing elit. Iste nemo a error libero <br>
                                 qui ducimus quidem sit dicta maiores veniam <br>
                                 est, esse porro adipisci nulla quisquam harum <br>
@@ -244,16 +245,14 @@
                             </p>
                         </div>
                     </div>
-        
-                    <!-- Carousel Item 2 -->
-                    <div class="carousel-item">
+                    <div class="carousel-item" style="display: inline-block; width: 100%; text-align: center;">
                         <div class="conainerforsixthpagecustomers">
                             <img src="Images/zen.jpg" alt="" class="imagesofsixthpagecustomers">
-                            <i class="fa-sharp fa-solid fa-quote-left" id="iconssixthpage"></i>
+                            <i class="fa-sharp fa-solid fa-quote-left"></i>
                             <h5>ZenCourt</h5>
                             <label class="paraofseconddiv">Magna Ulqua. Ut</label>
                             <p class="paraofseconddiv">
-                                Lorem ipsum dolor sit amet consectetur, <br>
+                                Lorem ipsum dolor sit amet consectetur,<br>
                                 adipisicing elit. Iste nemo a error libero <br>
                                 qui ducimus quidem sit dicta maiores veniam <br>
                                 est, esse porro adipisci nulla quisquam harum <br>
@@ -262,14 +261,13 @@
                         </div>
                     </div>
                 </div>
-        
-                <!-- Carousel Navigation Buttons -->
-                <div class="btnofsisthdiv1">
-                    <button class="btnofsisthpage" onclick="prevSlide()"><<</button>
-                    <button class="btnofsisthpage" onclick="nextSlide()">>></button>
-                </div>
+            </div>
+            <div class="btnofsisthdiv1" style="text-align: center; margin-top: 10px;">
+                <button class="btnofsisthpage" onclick="prevSlide()"><<</button>
+                <button class="btnofsisthpage" onclick="nextSlide()">>></button>
             </div>
         </div>
+    
         <!-- closing of sixth page here -->
            
           <!-- starting footer here -->
@@ -313,6 +311,6 @@
     <!--closing maincontainer for all elements -->
 
 
-    <script src="WebSiteFinexo.js"></script>
+    <script src="finexo_web_template.js"></script>
 </body>
 </html>
