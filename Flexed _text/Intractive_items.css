@@ -1,0 +1,51 @@
+.clearfix {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    min-height: 100px;
+    font-size: larger;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.child {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightcoral;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover animation on boxes*/
+.child:hover {
+    transform: scale(1.1);
+    background-color: orange;
+}
+
+/* Expanding Effect content here */
+.child.expanded {
+    width: 100%;
+    background-color: darkblue;
+}
+
+/* Button styling */
+.buttons {
+    margin-top: 10px;
+}
+/* buttons css */
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* hover position */
+button:hover {
+    background: #0056b3;
+}
