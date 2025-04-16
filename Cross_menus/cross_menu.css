@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Hamburger Menu Icon set */
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #f25d07;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect to transform into a cross */
+.menu-icon:hover span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 12px);
+}
+
+.menu-icon:hover span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon:hover span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -12px);
+}
