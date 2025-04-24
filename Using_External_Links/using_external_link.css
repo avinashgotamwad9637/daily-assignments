@@ -1,0 +1,38 @@
+/* Basic styling for parent and child */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Parent as a table */
+.parent {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Child as a table-cell */
+.child {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #2b2a2c;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+a {
+   color: white;
+   text-decoration: none;
+}
