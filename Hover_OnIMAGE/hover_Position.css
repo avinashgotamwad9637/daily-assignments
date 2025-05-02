@@ -1,0 +1,40 @@
+:root{
+    --clr-bgcolor:black;
+    --clr-bglihght: rgba(0,0,0,0.7);
+    --clr-text: white;
+}
+
+.firstdiv{
+    height: 100vh;
+    width: 400px;
+    background-color: var(--clr-bgcolor);
+    color: var(--clr-text);
+}
+h4{
+    position: relative;
+    top: 0px;
+    left: 2px;
+}
+img{
+    height: 90vh;
+    width:400px;
+    position: relative;
+    top: 10px;
+}
+.content{
+     height: 90vh;
+     width: 400px;
+     top: 70px;
+     left: 8px;
+     position: absolute;
+     background-color: var(--clr-bglihght);
+     opacity: 0;
+     transition: 0.6s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+.content:hover{
+   opacity: 2;
+}
