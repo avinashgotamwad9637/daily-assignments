@@ -1,0 +1,46 @@
+        :root {
+            --clr-text: white;
+            --clr-backg: rgba(0, 0, 0, 0.603);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height of viewport */
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .hello {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--clr-text);
+            background-color: var(--clr-backg);
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin: 0;
+        }

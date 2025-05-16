@@ -1,0 +1,97 @@
+:root {
+  --clr-text: #ffffff;
+  --clr-bg: linear-gradient(145deg, #2e86eb, #1b4fbc);
+  --clr-scrollbar-track: #1c1c1c;
+  --clr-scrollbar-thumb: #888;
+  --clr-scrollbar-thumb-hover: #555;
+  --clr-highlight: rgba(0, 0, 0, 0.4);
+  --clr-letter-bg: #f1c40f;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #1a1a1a, #111);
+  color: var(--clr-text);
+  font-family: var(--font-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main.alphabet-panel {
+  height: 70vh;
+  width: 280px;
+  background: var(--clr-bg);
+  border-radius: 15px;
+  overflow-y: auto;
+  padding: 15px 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+main.alphabet-panel:hover {
+  transform: scale(1.01);
+}
+
+.letter-sec {
+  margin-bottom: 20px;
+}
+
+ul.word-list {
+  list-style-type: none;
+  padding-left: 30px;
+  margin: 0;
+  text-transform: capitalize;
+  position: relative;
+}
+
+ul.word-list li {
+  font-size: 1.05rem;
+  margin: 4px 0;
+  transition: color 0.2s ease;
+}
+
+ul.word-list li:hover:not(.letter-head) {
+  color: #ffeaa7;
+  cursor: pointer;
+}
+
+ul.word-list li.letter-head {
+  background-color: var(--clr-letter-bg);
+  color: #111;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-weight: bold;
+  line-height: 30px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+/* Scrollbar Styling */
+main.alphabet-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+main.alphabet-panel::-webkit-scrollbar-track {
+  background: var(--clr-scrollbar-track);
+}
+
+main.alphabet-panel::-webkit-scrollbar-thumb {
+  background-color: var(--clr-scrollbar-thumb);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+main.alphabet-panel::-webkit-scrollbar-thumb:hover {
+  background-color: var(--clr-scrollbar-thumb-hover);
+}
