@@ -1,0 +1,46 @@
+    :root {
+      --clr-background1: rgb(57, 147, 249);
+      --clr-background2: rgb(254, 6, 6);
+      --clr-background3: rgb(57, 147, 249);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f2f5;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+    }
+
+    .hover-box {
+      height: 50px;
+      width: 160px;
+      background-color: var(--clr-background1);
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      transition: background-image 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
+    .hover-box:hover {
+      background-image: linear-gradient(to right bottom, var(--clr-background2), var(--clr-background3));
+    }
+
+    .hover-box a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }

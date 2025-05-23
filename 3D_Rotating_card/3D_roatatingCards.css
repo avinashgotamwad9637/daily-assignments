@@ -1,0 +1,46 @@
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #f0f2f5, #e0e7ef);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .image-card {
+      width: 240px;
+      height: 320px;
+      background: url('\3D_Rotating_card\Images\Flower Image.jpeg') center/cover no-repeat;
+      border-radius: 1rem;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 1s ease;
+    }
+
+    .content-left {
+      transform: perspective(1500px) rotateY(15deg);
+    }
+
+    .content-left:hover {
+      transform: perspective(3000px) rotateY(5deg);
+    }
+
+    .content-right {
+      transform: perspective(1500px) rotateY(-15deg);
+    }
+
+    .content-right:hover {
+      transform: perspective(3000px) rotateY(-5deg);
+    }

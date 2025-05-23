@@ -1,0 +1,49 @@
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      margin: 0 auto;
+      height: 70vh;
+      width: 70%;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      overflow: auto; /* Enables both horizontal and vertical scroll */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .content {
+      width: 1200px;  /* Wider than container */
+      height: 1000px;  /* Taller than container */
+      padding: 20px;
+    }
+
+    .images {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+      margin: 20px;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+      display: block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .images:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
