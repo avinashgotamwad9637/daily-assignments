@@ -1,0 +1,26 @@
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      width: calc(100% - 40px); /* 20px padding on both sides */
+      max-width: 400px; /* optional: to restrict large screens */
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.1) rotate(5deg); /* subtle, smooth rotation */
+    }

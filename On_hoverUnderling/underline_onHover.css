@@ -1,0 +1,47 @@
+        :root {
+            --clr-text: rgb(29, 175, 242);
+            --box-bg: #ffffff;
+            --box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 16px;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            padding: 30px 40px;
+            background-color: var(--box-bg);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+        }
+
+        p {
+            color: var(--clr-text);
+            font-size: 20px;
+            position: relative;
+            text-decoration: none;
+            padding: 0 10px;
+            margin: 0;
+        }
+
+        p::after {
+            content: "";
+            position: absolute;
+            background-color: var(--clr-text);
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+
+        p:hover::after {
+            width: 100%;
+        }
