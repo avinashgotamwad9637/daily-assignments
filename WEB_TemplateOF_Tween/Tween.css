@@ -1,0 +1,80 @@
+*{
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body{
+   padding: 0px;
+   margin: 0px;
+}
+
+.Bg-ImageFIxing{
+   position: relative;
+   top: 0;
+   height: 550px;
+   width: 100%;
+   background-image: url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   color: rgb(255, 255, 255);
+   z-index: -234;
+}
+.project-card {
+   height: 250px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.card-overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background: rgba(255, 255, 255, 0.9);
+   padding: 10px;
+}
+.card-overlay h5 {
+   margin: 0;
+   font-size: 20px;
+}
+.fifth-container-bg{
+   height: 600px;
+   /* width: 100%; */
+   background-image: url(https://media.istockphoto.com/id/1389240110/photo/businessman-use-tablet-on-data-science-and-business-of-modern-technology-idea-and-creative.jpg?s=1024x1024&w=is&k=20&c=jV5kJhU9cWG1h4x3rsVSFSfvUOMNy6aVgwHRKgt6ouM=);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   opacity: 75%;
+}
+.g-col-6{
+   height: 300px;
+   width: 300px;
+   border: 2px solid black;
+}
+
+ .form-label {
+   display: block;
+   text-align: left;
+   margin-bottom: 0.5rem;
+ }
+ .footer-social-img{
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+ }
+
+ @media (max-width: 992px) {
+   .form-page-media{
+     margin-top: 450px;
+   }
+ }
+
+  
+ 
+
+
+
