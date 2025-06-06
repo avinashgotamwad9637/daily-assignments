@@ -1,0 +1,349 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;  
+}
+header, main{
+  background-color: rgb(255, 238, 214);
+}
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff9800; /* Change the color on hover */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #ff9800;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Background Slider play in back side*/
+.slider-container {
+  width: 100%;
+  position: relative;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  flex: 1 0 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-1 { background-image: url('Images/Banner_1.jpg'); }
+.slide-2 { background-image: url('Images/Banner_2.jpg'); }
+.slide-3 { background-image: url('Images/Banner_3.jpg'); }
+.slide-4 { background-image: url('Images/Banner_4.jpg'); }
+.slide-5 { background-image: url('Images/Banner_5.jpg'); }
+.slide-6 { background-image: url('Images/Banner_6.jpg'); }
+.slide-7 { background-image: url('Images/Banner_7.jpg'); }
+
+/* Search Form */
+.search-form {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  background: #ffffffc8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-form .form-group {
+  flex: 1;
+  margin: 10px;
+}
+
+.search-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.search-form input, .search-form select, .search-form button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+ 
+}
+.zoom-effect {
+  box-sizing: 2px 5px 8px rgb(72, 72, 72);
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1); /* Adjust the scale value as needed */
+}
+.bext_price-text{
+  color: brown;
+}
+.image-wrapper {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  padding: 5px; /* Add space around the image for the background */
+  background-color: white; /* Default background color */
+  border-radius: 14px; /* Slightly larger rounded corners than the image */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto; 
+  border-radius: 10px; 
+  transition: width 0.3s ease, height 0.3s ease; 
+}
+
+.image-wrapper:hover {
+  background-color: rgb(224, 224, 224); /* Change background color to grey on hover */
+}
+
+.image-wrapper:hover img {
+  width: 90%; 
+  height: auto; 
+  margin: auto; 
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container img {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+  height: 600px;
+  width: 550px;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  height: 600px;
+  width: 550px;
+  background: rgb(214, 214, 214);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.image-container:hover img {
+  transform: translate(-5px, -5px) scale(0.96); /* Adjusted positioning */
+}
+
+.image-container:hover::before {
+  opacity: 1;
+}
+.image-container img, .image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.swiper {
+width: 92%;
+margin: auto;
+padding: 20px 0;
+position: relative; 
+}
+
+/* Ensure slides are centered */
+.swiper-slide {
+display: flex;
+justify-content: center;
+}
+.swiper-slide .card {
+  perspective: 1000px; 
+}
+
+.swiper-slide .card img {
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d; 
+  backface-visibility: hidden; 
+}
+
+.swiper-slide .card:hover img {
+  transform: rotateY(360deg);
+}
+
+.card {
+width: 345px; /* Increased from 300px */
+padding: 20px;
+background: white;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+/* Image inside cards */
+.card img {
+width: 50px;
+margin-bottom: 10px;
+}
+
+/* Styling for headings */
+h3 {
+color: #540C51;
+}
+
+/* Remove default bullet points */
+ul {
+list-style: none;
+padding: 0;
+}
+
+li {
+margin: 5px 0;
+}
+
+/* Swiper button styling */
+.swiper-button-next, .swiper-button-prev {
+position: absolute;
+top: -50px; 
+right: 10px; 
+color: #540C51;
+background: white;
+padding: 10px;
+border-radius: 50%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+z-index: 10;
+}
+
+/* Move previous button to the left of the next button */
+.swiper-button-prev {
+right: 50px; /* Adjust distance */
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+font-size: 20px;
+font-weight: bold;
+}
+.news-thumb {
+width: 150px; 
+height: 100px; 
+object-fit: cover;
+border-radius: 5px; 
+}
+.custom-img {
+height: auto;  
+max-height: 600px; 
+width: 500px;
+}
+.news-thumb {
+transition: transform 0.3s ease; 
+}
+
+.news-thumb:hover {
+transform: scale(1.1);  
+}
+.custom-img {
+transition: transform 0.3s ease;  /* Smooth transition */
+}
+
+.custom-img:hover {
+transform: scale(1.1);  /* Zoom in by 10% */
+}
+
+.footer h5 {
+color: white !important;
+}
+
+.footer {
+background-color: #1b1e22;
+padding: 40px 0;
+}
+.footer a {
+text-decoration: none;
+color: #ccc;
+transition: 0.3s;
+}
+.footer a:hover {
+color: orange;
+}
+.social-icons a {
+width: 40px;
+height: 40px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background: #333;
+border-radius: 50%;
+color: white;
+font-size: 18px;
+transition: 0.3s;
+}
+.social-icons a:hover {
+background: orange;
+}
+.bottom-bar {
+background: #0f0f0f;
+text-align: center;
+padding: 15px 0;
+font-size: 14px;
+}
+.back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: orange;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
